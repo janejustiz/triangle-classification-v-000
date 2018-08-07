@@ -8,6 +8,8 @@ class Triangle
   end
 
   def kind
+    if @first == @second == @third
+    end
   end
 
   class TriangleError < StandardError
