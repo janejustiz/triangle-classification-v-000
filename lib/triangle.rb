@@ -10,6 +10,10 @@ class Triangle
   def kind
     if @first == @second && @first == @third
       :equilateral
+    elsif @first != @second && @first != @third || @second != @third
+      :scalene
+    elsif @first == @second || @second == @third || @first == @third
+      :isosceles
     end
   end
 
